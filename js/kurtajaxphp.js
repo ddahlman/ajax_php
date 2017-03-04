@@ -5,6 +5,7 @@ $('input').on('keypress', function (e) {
         e.preventDefault();
         $.get("kurtphp.php", {
             type: typ
+
         }, function (response) {
             var array = JSON.parse(response);
             alert(response);
